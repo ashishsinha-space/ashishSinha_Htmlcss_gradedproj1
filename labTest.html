@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="labTest.css">
+    <title>Book your slot</title>
+</head>
+
+<body>
+
+
+    <article id="forTest">
+        <aside id="forAsideRight"><img src="Images/Lab-Test/lab-test.jpg" id="forImage"></aside>
+
+
+        <div id="forForm">
+
+            <form id="theForm">
+                <h1>Your Contact Details</h1>
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Patient Id if exists">
+                <br>
+                <input type="text" pattern="[789][0-9]{9}"placeholder="Contact Number">
+                <input type="email" placeholder="Email Id">
+
+                <h1>Address</h1>
+                <input type="number" placeholder="House Number">
+                <input type="text" placeholder="Street">
+                <br>
+                <input type="text" placeholder="Area">
+                <br>
+                District
+                <br>
+                <select>
+                    <option value="Choose">Choose</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+                <br>
+
+
+                <h1>Choose the Test Type</h1>
+                (Check atleast one box without fail)
+                <br>
+                <input type="checkbox" id="CBC" name="CBC" value="CBC">
+                <label for="CBC"> CBC</label><br>
+
+                <input type="checkbox" id="Complete Urine" name="Complete Urine" value="Complete Urine">
+                <label for="Complete Urine"> Complete Urine</label><br>
+
+                <input type="checkbox" id="Lipid Profile" name="Lipid Profile" value="Lipid Profile">
+                <label for="Lipid Profile"> Lipid Profile</label><br>
+
+                <input type="checkbox" id="TSH" name="TSH" value="TSH">
+                <label for="TSH"> Thyroid Stimulating Hormone(TSH)</label><br>
+
+                <input type="checkbox" id="Glucose Test" name="Glucose Test" value="Glucose Test">
+                <label for="Glucose Test"> Glucose Test</label><br>
+
+
+                <h1>Do you want a hard copy of the report also?</h1>
+
+                        <input type="radio" id="yes" name="report" value="true">
+                        <label for="yes">yes</label><br>
+                        <input type="radio" id="no" name="report" value="false">
+                        <label for="no">no</label><br>
+
+                <h1>Select Your Comfortable Date and Time</h1>
+                <label for="date">Date:</label>
+  <input type="date" id="date" name="date">
+  <br>
+  <label for="time">Time:</label>
+  <input type="time" id="time" name="time">
+
+  
+            </form>
+
+        </div>
+
+    </article>
+<br>
+    <div id="forButtons">
+    <button type="reset"  form="theForm">Reset</button>
+    <button type="submit"  form="theForm">submit</button>
+</div>
+
+</body>
+
+</html>
